@@ -10,12 +10,12 @@ var urlListModel=require('./model/urlList.js')
 
 urlListModel.find({}).exec(function(err,users){
     download(users);
-    console.log(users.length);
+    // console.log(users.length);
 })     
 function download(urls){
     var count=0
     async.mapLimit(urls,5,function(url,callback){
-        console.log(url.url);
+        console.log("正在下载"+url.url);
         url=url.url.replace('_200x112','');
         superagent.get(url).end(function(err,res){
             if(res){
