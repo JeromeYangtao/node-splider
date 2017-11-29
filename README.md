@@ -8,4 +8,4 @@
 执行 `node app.js`后，等待下载完成，所有图片保存在 `images` 目录
 # 效果
 
-![下载](https://heyliup.github.io/node-splider/show.gif)
+![下载](https://heyliup.github.io/node-splider/shows.gif)
