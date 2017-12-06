@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 
-// 以下MongoDB连接相关代码页可以独立出去，这里偷懒了
-// 连接MongoDB, 在生产环境应该禁用autoIndex，因为会造成性能问题
 const connString = 'mongodb://localhost:27017/splider';
 mongoose.connect(connString,{ /*config: { autoIndex: false }*/ });
 
